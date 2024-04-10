@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Faltas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Faltas</h1>
+        <div class="corpo">
+            <button onclick="adicionarLinha()">Adicionar Profissional</button>
+            <button onclick="removerSelecionados()">Remover Selecionados</button>
+            <button onclick="exportarTabelaParaExcel()">Exportar para Excel</button>
+            <button onclick="importarPlanilhaDoExcel()">Importar do Excel</button>
+            <button onclick="excluirTodasLinhas()">Limpar Planilha</button> 
+            <div id="tabelaSelecionada"></div> <!-- Div para mostrar as tabelas selecionadas -->
+            <table id="tabelaProfissionais">
+                <thead>
+                    <tr>
+                        <th>Selecionar</th>
+                        <th>Matrícula</th>
+                        <th>Nome do Profissional</th>
+                        <th>Número de Faltas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas serão adicionadas dinamicamente aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <!-- Importando a biblioteca SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <!-- Importando o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
