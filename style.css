@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(128, 123, 118);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: beige;
+    text-align: center;
+    width: 90%;
+    max-width: 800px; /* Limita a largura máxima para melhor legibilidade */
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.corpo {
+    background-color: beige;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: auto;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando a tabela excede a largura do contêiner */
+}
+
+/* Cabeçalho da tabela */
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Adiciona bordas às células */
+}
+
+/* Estilo para telas menores */
+@media screen and (max-width: 600px) {
+    /* Ajusta o tamanho do texto para telas menores */
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
